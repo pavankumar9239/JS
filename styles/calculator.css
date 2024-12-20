@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+.js-clear {
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    font-family: Arial;
+    margin: 3px;
+}
+
+.js-num {
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 25px;
+    font-family: Arial;
+    margin: 3px;
+}
+
+.js-sym {
+    background-color: orange;
+    color: white;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.txt {
+    font-size: 30px;
+}

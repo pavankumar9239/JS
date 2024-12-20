@@ -1,0 +1,44 @@
+<html></html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./styles/calculator.css">
+    </head>
+    <body>
+        <p class="txt" >undefined</p>
+        <p>
+        <button class="js-num" onclick="calculate('1')">1</button>
+        <button class="js-num" onclick="calculate('2')">2</button>
+        <button class="js-num" onclick="calculate('3')">3</button>
+        <button class="js-sym" onclick="calculate(' + ')">+</button>
+        </p>
+        <p>
+            <button class="js-num" onclick="calculate('4')">4</button>
+            <button class="js-num" onclick="calculate('5')">5</button>
+            <button class="js-num" onclick="calculate('6')">6</button>
+            <button class="js-sym" onclick="calculate(' - ')">-</button>
+        </p>
+        <p>
+            <button class="js-num" onclick="calculate('7')">7</button>
+            <button class="js-num" onclick="calculate('8')">8</button>
+            <button class="js-num" onclick="calculate('9')">9</button>
+            <button class="js-sym" onclick="calculate(' * ')">*</button>
+        </p>
+        <p>
+            <button class="js-num" onclick="calculate('0')">0</button>
+            <button class="js-num" onclick="calculate('.')">.</button>
+            <button class="js-num" onclick="
+                calculation = eval(calculation);
+                document.querySelector('.txt').innerHTML=`${calculation}`;
+                localStorage.setItem('calculate',JSON.stringify(calculation));
+                console.log(calculation)">=</button>
+            <button class="js-sym" onclick="calculate(' / ')">/</button>
+        </p>
+        <button class="js-clear" onclick="
+                calculation='';
+                document.querySelector('.txt').innerHTML=`${calculation}`;
+                localStorage.clear('calculate');">Clear</button>
+        <script src="./scripts/10-calculator-with-css.js">
+            
+        </script>
+    </body>
+</html>

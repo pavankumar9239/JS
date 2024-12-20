@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Arrays and Loops</title>
+    </head>
+    <body>
+        <script>
+            // const nums = [10, 20, 30];
+            // nums[2]=99;
+            // console.log(nums);
+
+            // const getLastValue = nums => {
+            //     console.log(nums[nums.length-1])
+            // }
+
+            // getLastValue([1,2,3,4]);
+            // getLastValue(['hi','hello','good']);
+            // arraySwap([1,2,3,4]);
+
+            // function arraySwap(nums) {
+            //     let temp1 = nums[0];
+            //     let temp2 = nums[nums.length-1];
+            //     nums[nums.length-1] = temp1; 
+            //     nums[0] = temp2;
+            //     console.log(nums);
+            // }
+
+            // // const arraySwap = nums => {
+            // //     let temp1 = nums[0];
+            // //     let temp2 = nums[nums.length-1];
+            // //     nums[nums.length-1] = temp1; 
+            // //     nums[0] = temp2;
+            // //     console.log(nums);
+            // // }
+
+            // arraySwap([1,2,3,4]);
+            // arraySwap(['hi','hello','good']);
+
+            // for(let i=0;i<=10;i+=2) {
+            //     console.log(i);
+            // }
+            // i=0;
+            // while(i<11) {
+            //     console.log(i);
+            //     i++;
+            // }
+
+            // for(let i=5;i>=0;i--) {
+            //     console.log(i);
+            //  }
+
+            // i=5;
+            // while(i>=0) {
+            //     console.log(i);
+            //     i--;
+            // }
+
+            // [1,2,3].forEach((value) => {
+            //     value++;
+            //     console.log(value);
+            // });
+
+            // const addOne = nums => {
+            //     // nums.forEach((value) => {
+            //     //     value++;
+            //     // });
+            //     for(let i=0; i<nums.length;i++) {
+            //         nums[i]++;
+            //     }
+            //     console.log(nums);
+            // };
+
+            // addOne([1,2,3]);
+            // addOne([-2,0,99]);
+
+            // const addNum = (nums, sum) => {
+            //     for(let i=0; i< nums.length;i++) {
+            //         nums[i] += sum;
+            //     }
+            //     return nums;
+            // };
+
+            // console.log(addNum([1,2,3],2));
+
+            // const countPositive = nums => {
+            //     console.log(nums.filter((value, index) => {
+            //         return value >= 0;
+            //     }));
+            // };
+
+            // countPositive([1,-2,3,4,-9]);
+
+            // function minMax(nums) {
+            //     if(nums.length === 0)
+            //         return {min: null, max: null};
+            //     else {
+            //         let tempMin=nums[0];
+            //         let tempMax=nums[0];
+            //         for(let i=0; i<nums.length;i++) {
+            //             if(tempMin>nums[i]){
+            //                 tempMin = nums[i];
+            //             }
+            //             if(tempMax<nums[i]){
+            //                 tempMax = nums[i];
+            //             }
+            //         }
+            //         return {min: tempMin, max: tempMax};
+            //     }
+            // }
+
+            // console.log(minMax([1,2,0,4,5]));
+            // console.log(minMax([]));
+
+            // function countWords(words) {
+            //     let word = {};
+            //     for(let i=0; i<words.length; i++) {
+            //         // word[words[i]] > 0 ? word[words[i]]++ : word[words[i]] = 0;
+            //         // word[words[i]] = parseInt(word[words[i]])++;
+            //         word[words[i]] = 0;
+            //     }
+
+            //     for(let i=0; i<words.length; i++) {
+            //         // word[words[i]] > 0 ? word[words[i]]++ : word[words[i]] = 0;
+            //         // word[words[i]] = parseInt(word[words[i]])++;
+            //         word[words[i]]++;
+            //     }
+
+            //     return word;
+            // }
+            // console.log(countWords(['apple', 'orange', 'apple']));
+
+            // function findArray(words) {
+            //     const key = 'search';
+            //     for(let i=0; i<words.length;i++) {
+            //         if(words[i] === key)
+            //             return i;
+            //     }
+            //     // words.forEach((element, index) => {
+            //     //     if(element === key) {
+            //     //         return index;
+            //     //     }
+            //     // });
+            // }
+            // console.log(findArray(['find','search','find','array']));
+
+            // function findWord(words,key) {
+            //     for(let i=0; i<words.length;i++) {
+            //         if(words[i] === key)
+            //             return i;
+            //     }
+            //     return -1;
+            // }
+            // console.log(findWord(['find','search','find','array'],'s'));
+
+            // function removeEgg(food) {
+            //     let count=0;
+            //     food = food.reverse();
+            //     // console.log(food);
+            //     for(let i=0; i<food.length; i++) {
+            //         let temp = i;
+            //         if(food[i]==='egg' && count < 2) {
+            //             food.splice(i,1);
+            //             i=temp;
+            //             count++;
+            //         }
+            //     }
+            //     return food.reverse();
+            // }
+            // console.log(removeEgg(['egg','food','egg','ham','egg']));
+
+            // console.log(['egg','food','egg','ham','egg'].reverse());
+            // console.log(['egg','food','egg','ham','egg'].slice());
+
+            // function removeEgg(food) {
+            //     let count=0;
+            //     let food1 = food.slice();
+            //     console.log(food1);
+            //     food = food.reverse();
+            //     // console.log(food);
+            //     for(let i=0; i<food.length; i++) {
+            //         let temp = i;
+            //         if(food[i]==='egg' && count < 2) {
+            //             food.splice(i,1);
+            //             i=temp;
+            //             count++;
+            //         }
+            //     }
+            //     return food.reverse();
+            // }
+            // console.log(removeEgg(['egg','food','egg','ham','egg']));
+
+            // for(let i=1; i<=20; i++) {
+            //     if(i%3 ===0 && i%5===0)
+            //         console.log('FizzBuzz');
+            //     else if(i%3===0)
+            //         console.log('Fizz');
+            //     else if(i%5===0)
+            //         console.log('Buzz');
+            //     else
+            //         console.log(i);
+            // }
+
+            function findIndex(words,key) {
+                for(let i=0; i<words.length;i++) {
+                    if(words[i] === key)
+                        return i;
+                }
+                return -1;
+            }
+            function unique(words) {
+                for(let i=0;i<words.length;i++) {
+                    let temp=i;
+                    let a = findIndex(words.slice(0,i),words[i]);
+                    if(a!=-1){
+                        words.splice(i,1);
+                        i=temp;
+                    }
+                    
+                }
+                return words;
+            }
+            console.log(unique(['find','search','find','array']));
+            
+        </script>
+    </body>
+</html>

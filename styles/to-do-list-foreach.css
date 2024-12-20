@@ -1,0 +1,49 @@
+.txt{
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.js-txt2  {
+    margin-bottom: 40px;
+}
+
+.todo-row {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.js-txt3 {
+    font-size: 15px;
+    padding: 8px;
+}
+
+.js-dt1 {
+    font-size: 15px;
+    padding: 6px;
+    font-weight: 100;
+}
+
+.js-btn3,
+.js-btn4 {
+    background-color: green;
+    font-size: 15px;
+    padding: 9px;
+    border: none;
+    color: white;
+}
+
+.js-dlt {
+    background-color: maroon;
+}
+
+.t {
+    font-size: 17px;
+    font-family: Arial;
+}
+
+.b {
+    cursor: pointer;
+}

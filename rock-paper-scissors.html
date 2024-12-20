@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+    <head> 
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <p>Rock Paper Scissors</p>
+
+        <button onclick="
+            const rand = Math.random(); 
+            let computer='';
+            if(rand >= 0 && rand < 1/3){
+                computer = 'rock';
+            }
+            else if (rand >= 1/3 && rand < 2/3) {
+                computer = 'paper';
+            }
+            else if(rand >= 2/3 && rand < 1) {
+                computer = 'scissors';
+            }
+            let result='';
+            if(computer === 'rock')
+            {
+                result='Tie.'
+            } else if(computer === 'paper'){
+                result = 'You lose.';
+            } else if(computer === 'scissors'){
+                result = 'You win.';
+            }
+
+            alert(`You pickec rock. Computer picked ${computer}. ${result}`);
+            
+        ">Rock</button>
+
+        <button onclick="
+            rand = Math.random(); 
+            computer='';
+            if(rand >= 0 && rand < 1/3){
+                computer = 'rock';
+            }
+            else if (rand >= 1/3 && rand < 2/3) {
+                computer = 'paper';
+            }
+            else if(rand >= 2/3 && rand < 1) {
+                computer = 'scissors';
+            }
+            result='';
+            if(computer === 'rock')
+            {
+                result='You win.'
+            } else if(computer === 'paper'){
+                result = 'Tie.';
+            } else if(computer === 'scissors'){
+                result = 'You lose.';
+            }
+
+            alert(`You pickec paper. Computer picked ${computer}. ${result}`);  
+        ">Paper</button>
+
+        <button onclick="
+            rand = Math.random(); 
+            computer='';
+            if(rand >= 0 && rand < 1/3){
+                computer = 'rock';
+            }
+            else if (rand >= 1/3 && rand < 2/3) {
+                computer = 'paper';
+            }
+            else if(rand >= 2/3 && rand < 1) {
+                computer = 'scissors';
+            }
+            result='';
+            if(computer === 'rock')
+            {
+                result='You lose.'
+            } else if(computer === 'paper'){
+                result = 'You win.';
+            } else if(computer === 'scissors'){
+                result = 'Tie.';
+            }
+
+            alert(`You pickec scissors. Computer picked ${computer}. ${result}`);
+        ">Scissors</button>
+        <script>
+
+        </script>
+    </body>
+</html>

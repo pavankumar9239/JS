@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head> 
+        <title>Arrays and Loops</title>
+    </head>
+    <body>
+        <script>
+            /*const array = [10, 20, 30];
+            console.log(array);
+
+            console.log(array[1]);
+            array[0] = 'Hi';
+            console.log(array[0]);
+            array[3]=10;
+            console.log(array[4]);
+
+            [1, 'hello', true, {name:'socks'}]
+
+            console.log(typeof [1,2]);
+            console.log(Array.isArray([1,2]));
+
+            console.log(array.length);
+
+            array.push(100);
+            console.log(array);
+
+            array.splice(0,1);
+            console.log(array);
+
+            let i=1;
+            while(i<=5) {
+                console.log(i);
+                i++;
+            }
+
+            for(let i=1;i<=5;i++) {
+                console.log(i);
+            }*/
+
+            //arrays are references
+            const array1 = [1,2,3];
+            const array2 = array1.slice();
+            array2.push(4);
+            console.log(array1);
+            console.log(array2);
+
+            const [fv,sv] = [1,2,3];
+            console.log(fv,sv);
+
+            for(let i=1; i<=10;i++) {
+                if(i===3) { //to skip an iteration
+                    continue;
+                }
+                console.log(i);
+                if(i === 8) { //to break a loop
+                    break;
+                }
+            }
+        </script>
+    </body>
+</html>

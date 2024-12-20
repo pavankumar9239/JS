@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Advanced Functions</title>
+    </head>
+    <body>
+        <!--<button class="js-btn" onclick="timeout();">Start</button>
+
+        <br>
+        <button style="margin-top: 10px;" class="js-cartbtn" onclick="timeoutP();">Add to cart</button>
+        <p class="js-cartp"></p>
+        <br>
+        <button class="js-add" onclick="//c++;
+         d++;">Add</button>
+        <button class="js-remove" onclick="//c--;
+         if(d>0){
+         d--;
+         }">Remove</button>
+         <button onclick="
+            messages++;
+            displayNotification();
+          ">Add</button>
+
+          <button onclick="
+            if (messages > 0) {
+              messages--;
+
+              // If there are no new messages, stop displaying
+              // the notification in the tab.
+              // if (messages === 0) {
+              //   stopNotification();
+              // }
+            }
+          ">Remove</button>-->
+        <script>
+            // const add = () => {
+            //     console.log(2+3);
+            // };
+            // add();
+
+            // function runTwice(func){
+            //     for(let i=0;i<2;i++)
+            //         func();
+            // }
+
+            // runTwice(function() {console.log('12b');});
+            // runTwice(add);
+
+            // const timeout = () => {
+            //     document.querySelector('.js-btn').innerHTML='Loading...';
+            //     setTimeout(function() {document.querySelector('.js-btn').innerHTML='Finished';},5*1000);
+            // };
+
+            // let a;
+            // const timeoutP = () => {
+            //     clearTimeout(a);
+            //     document.querySelector('.js-cartp').innerHTML='Added';
+            //     a =setTimeout(function() {document.querySelector('.js-cartp').innerHTML='';},5*1000);
+            // };
+
+            // let b=1;
+            // setInterval(function() {
+            //     document.title = 'New'+ b++;
+            // }, 1*1000);
+
+            // let c=1;
+            // setInterval(function() {
+            //     document.title = 'New'+c;
+            //     c++;
+            // }, 1*1000);
+
+            // let d=1;
+            // let a;
+            // if(d<1) {
+            //     clearInterval(a);
+            //     document.title = 'App';
+            // }
+            // else{
+            //     a = setInterval(function() {
+            //         document.title = 'New'+d;
+            //         d++;
+            //     }, 1*1000);
+            // }
+
+            // let messages =2;
+            // let intervalId;
+            // displayNotification();
+            // function displayNotification() {
+            //   setInterval(function() {
+            //     if(document.title === 'App') {
+            //       document.title = `Messages ${messages}`;
+            //     }
+            //     else {
+            //       document.title = 'App';
+            //     }
+            //   }, 1*1000);
+            // }
+
+            // let messages = 2;
+            // let intervalId;
+            // let isDisplayingNotification;
+            // displayNotification();
+
+            // function displayNotification() {
+            //   if (isDisplayingNotification) {
+            //     return;
+            //   }
+
+            //   isDisplayingNotification = true;
+
+            //   intervalId = setInterval(function() {
+            //     if (document.title === 'App') {
+            //       document.title = `(${messages}) New messages`;
+            //     } else {
+            //       document.title = 'App';
+            //     }
+            //   }, 1000);
+            // }
+
+            // function stopNotification() {
+            //   isDisplayingNotification = false;
+
+            //   clearInterval(intervalId);
+            //   document.title = 'App';
+            // }
+
+            // const multiply = (a,b) => a*b;
+
+            // console.log(multiply(2,3));
+
+            // const countPositive = (nums) => {
+            //     let count=0;
+            //     nums.forEach(element => {
+            //       if(element>0){count++;}
+            //     });
+            //     return count;
+            // }
+            // console.log(countPositive([1,-2,3,-4]));
+
+            // const addNum = (nums, num) => {
+            //   nums.map((value, index) => {
+            //     // nums[index] = value+10;
+            //     return value+10;
+            //   });
+            //   return nums;
+            // }
+
+            // const addNum = (nums, num) => nums.map(value => value+num);
+
+            // console.log(addNum([1,2,3],2));
+
+            // const removeEgg = words => {
+            //   console.log(words.filter(value => {
+            //     return value != 'egg';
+            //   }));
+            // }
+
+            const removeEgg = words => {
+              let count=0;
+              console.log(words.filter(value => {
+                if(value === 'egg' && count<3)
+                    count++;
+                return count <3 ? value != 'egg': value;
+              }));
+            }
+
+            removeEgg(['egg','apple','egg','egg','apple']);
+
+        </script>
+    </body>
+</html>

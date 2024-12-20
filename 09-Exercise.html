@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>DOM Exercises</title>
+    </head>
+    <bosy>
+        <button class="9a">9a</button>
+        <button class="9b">9b</button>
+        <input type="text" class="name" onkeydown="fun1();"  placeholder="name">
+        <button onclick="console.log(`Your name is ${document.querySelector('.name').value}`)">Submit</button>
+
+        <input type="text" class="update" onkeyup="document.querySelector('.updatetext').innerHTML=`${document.querySelector('.update').value}`">
+        <p class="updateText"></p>
+        
+        <script>
+            console.log(document.querySelector('button').innerHTML);
+            console.log(document.querySelector.innerHTML='9b done');
+
+            function fun1() {
+                if(event.key === 'Enter')
+                    console.log(`Your name is ${document.querySelector('.name').value}`);
+            }
+        </script>
+    </bosy>
+</html>

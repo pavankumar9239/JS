@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+    <head> 
+        <title>DOM</title>
+    </head>
+    <body>
+        <p>YouTube Subscribe Button</p>
+        <button class="js-ytsub" onclick="fun1();">Subscribe</button>
+        <p>Rock Paper Scissors</p>
+        <a href="rock-paper-scissors-DOM.html">Click here</a>
+        <p>Amazon Shipping Calculator</p>
+        <p>Orders under $40 = +$10 shipping.</p>
+        <p>Orders over $40 = FREE shipping.</p>
+        <p>
+        <input type="text" id="t1" class="js-orderValue" 
+       onkeydown="fun3();" placeholder="Cost of Order">
+        <button onclick="fun2();">Calculate</button>
+        </p>
+        <p class="js-ordertotal"></p>
+        <script>
+
+            // window.document
+            // window.console
+            // window.alert
+            
+
+
+
+            function fun1() {
+                if(document.querySelector('.js-ytsub').innerHTML === 'Subscribe')
+                    document.querySelector('.js-ytsub').innerHTML="Subscribed";
+                else
+                    document.querySelector('.js-ytsub').innerHTML="Subscribe";
+            }
+
+            function fun2() {
+                // let a = parseInt(document.getElementById('t1').value);
+                //let a = parseInt(document.querySelector('.js-orderValue').value);
+                let a = Number(document.querySelector('.js-orderValue').value)*100;
+                if(a < 4000){
+                    // document.querySelector('.js-ordertotal').innerHTML = typeof a;
+                    a += 1000;
+                }
+                document.querySelector('.js-ordertotal').innerHTML = `$${(a)/100}`;
+            }
+
+            function fun3()
+            {
+                if(event.key === 'Enter')
+                    fun2();
+            }
+        </script>
+    </body>
+</html>

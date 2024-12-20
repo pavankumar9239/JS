@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <p>Calculator</p>
+        <p>
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate(' + ')">+</button>
+        </p>
+        <p>
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate('-')">-</button>
+        </p>
+        <p>
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('*')">*</button>
+        </p>
+        <p>
+            <button onclick="calculate('0')">0</button>
+            <button onclick="calculate('.')">.</button>
+            <button onclick="
+                calculation = eval(calculation);
+                console.log(calculation)">=</button>
+            <button onclick="calculate('/')">/</button>
+        </p>
+        <button onclick="calculation='';">Clear</button>
+        <p>
+        <a href="./05-calculator-with-css.html">Clickhere</a> to see final version of the project</p>
+        
+        <script>
+            let calculation = '';
+            function calculate(a) {
+                calculation += a;
+                console.log(calculation);
+            }
+
+            
+
+            
+        </script>
+    </body>
+</html>
